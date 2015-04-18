@@ -3,7 +3,7 @@
   "description": "",
   "type": "privileged",
   "launch_path": "/index.html",
-  "permission": {
+  "permissions": {
     "systemXHR": {}
   }
 }
