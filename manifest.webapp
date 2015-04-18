@@ -1,0 +1,9 @@
+{
+  "name": "BGM for FxOS",
+  "description": "",
+  "type": "privileged",
+  "launch_path": "/index.html",
+  "permission": {
+    "systemXHR": {}
+  }
+}
