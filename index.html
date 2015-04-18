@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>BGM for Firefox OS</title>
 </head>
 <body>
+  <div id="app">
+    <h1 class="searchTerm" v-on="click: changeTerm">{{term}}</h1>
+    <div class="artworkBG">
+      <img src="{{artwork}}" alt="" class="artwork">
+    </div>
+    <div class="trackInfo">
+      <p class="trackName">{{trackName}}</p>
+      <p class="albumName">{{albumName}}</p>
+      <p class="artistName">{{artistName}}</p>
+    </div>
+    <div class="trackControl">
+      <p v-on="click: prev">Prev</p>
+      <p v-on="click: pause">{{playState}}</p>
+      <p v-on="click: next">Next</p>
+    </div>
+    <p class="itunes" v-on="click: openiTunes">View on iTunes</p>
+  </div>
+  <script src="/js/vue.min.js"></script>
   <script src="/js/player.js"></script>
   <script src="/js/app.js"></script>
 </body>
