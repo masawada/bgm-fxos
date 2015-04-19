@@ -1,5 +1,5 @@
 (function() {
-  var term = 'μ\'s';//window.prompt();
+  var term = window.prompt();
   player = new Player(term);
 
   var app = new Vue({
